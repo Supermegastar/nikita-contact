@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f4f4">
+  <meta name="description" content="Никита Старков — ООО МГК Световые Технологии">
+  <title>Никита Старков / Виртуальная визитная карточка</title>
+
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f3f3f3;
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{
+      width:min(100%,470px);
+      margin:0 auto;
+      min-height:100svh;
+      background:#fff;
+      box-shadow:0 8px 34px rgba(0,0,0,.08);
+    }
+    .photo{
+      width:100%;
+      aspect-ratio:1/1.08;
+      object-fit:cover;
+      object-position:center 25%;
+      display:block;
+      background:#ddd;
+    }
+    .content{
+      padding:28px 25px 34px;
+    }
+    .company{
+      font-size:13px;
+      line-height:1.35;
+      color:#747474;
+      margin-bottom:18px;
+    }
+    h1{
+      margin:0;
+      font-size:31px;
+      line-height:1.08;
+      font-weight:700;
+      letter-spacing:-.6px;
+    }
+    .role{
+      margin-top:11px;
+      font-size:16px;
+      line-height:1.45;
+      color:#555;
+    }
+    .divider{
+      height:1px;
+      background:#ececec;
+      margin:24px 0 8px;
+    }
+    .item{
+      display:block;
+      padding:15px 0;
+      border-bottom:1px solid #eeeeee;
+    }
+    .item small{
+      display:block;
+      color:#9a9a9a;
+      font-size:11px;
+      margin-bottom:5px;
+    }
+    .item strong{
+      font-size:16px;
+      font-weight:500;
+      line-height:1.4;
+      overflow-wrap:anywhere;
+    }
+    .address{
+      color:#444;
+    }
+    .actions{
+      display:grid;
+      gap:10px;
+      margin-top:25px;
+    }
+    .btn{
+      min-height:52px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:5px;
+      font-size:15px;
+      font-weight:600;
+      border:1px solid #202020;
+    }
+    .btn-main{
+      background:#202020;
+      color:#fff;
+    }
+    .btn-light{
+      background:#fff;
+      color:#202020;
+    }
+    .footer{
+      text-align:center;
+      padding:22px 20px 30px;
+      color:#aaa;
+      font-size:10px;
+      letter-spacing:.03em;
+      background:#fff;
+    }
+    @media (max-width:480px){
+      .wrap{box-shadow:none}
+      h1{font-size:29px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <img class="photo"
+         src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Brad_Pitt_2008.jpg"
+         alt="Фото">
+
+    <section class="content">
+      <div class="company">ООО "МГК "Световые Технологии"</div>
+
+      <h1>Никита Старков</h1>
+
+      <div class="role">
+        Руководитель направления «Спорт»
+      </div>
+
+      <div class="divider"></div>
+
+      <a class="item" href="tel:+79296817127">
+        <small>Телефон</small>
+        <strong>+7 929 681-71-27</strong>
+      </a>
+
+      <div class="item address">
+        <small>Адрес</small>
+        <strong>127273, г. Москва, ул. Отрадная, д. 2Б, стр. 7</strong>
+      </div>
+
+      <a class="item" href="https://www.ltcompany.com/" target="_blank" rel="noopener">
+        <small>Сайт</small>
+        <strong>www.ltcompany.com</strong>
+      </a>
+
+      <a class="item" href="mailto:n.starkov@ltcompany.com">
+        <small>E-mail</small>
+        <strong>n.starkov@ltcompany.com</strong>
+      </a>
+
+      <div class="actions">
+        <a class="btn btn-main" href="contact.vcf" download>Добавить в контакты</a>
+        <a class="btn btn-light" href="https://www.ltcompany.com/" target="_blank" rel="noopener">Открыть сайт</a>
+      </div>
+    </section>
+
+    <div class="footer">Виртуальная визитная карточка</div>
+  </main>
+</body>
+</html>
