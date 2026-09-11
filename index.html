@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#47464b">
+<title>Никита Старков</title>
+<style>
+:root{
+  --bg:#47464b;
+  --text:#ffffff;
+  --muted:#c8c7cb;
+  --accent:#9950b2;
+  --accent-link:#e37deb;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{
+  background:var(--bg);
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:geometricPrecision;
+}
+a{color:inherit;text-decoration:none}
+.card{
+  width:min(100%,896px);
+  margin:0 auto;
+  min-height:100svh;
+  background:var(--bg);
+  text-align:center;
+  padding:47px 68px 92px;
+}
+.logo{
+  width:548px;
+  max-width:77vw;
+  display:block;
+  margin:0 auto 43px;
+}
+.avatar{
+  width:329px;
+  height:329px;
+  max-width:43vw;
+  max-height:43vw;
+  object-fit:cover;
+  object-position:center 25%;
+  border-radius:50%;
+  display:block;
+  margin:0 auto 55px;
+  background:#fff;
+}
+.company{
+  font-size:39px;
+  line-height:1.17;
+  font-weight:700;
+  letter-spacing:-0.8px;
+  margin:0 0 19px;
+}
+.name{
+  font-size:48px;
+  line-height:1.15;
+  font-weight:700;
+  letter-spacing:-1px;
+  margin:0;
+}
+.role{
+  max-width:715px;
+  margin:25px auto 0;
+  color:var(--muted);
+  font-size:34px;
+  line-height:1.48;
+  font-weight:400;
+  letter-spacing:-0.2px;
+}
+.contacts{
+  margin-top:51px;
+}
+.phone{
+  display:block;
+  font-size:34px;
+  line-height:1.2;
+  margin-bottom:18px;
+}
+.address{
+  font-size:31px;
+  line-height:1.35;
+  margin-bottom:16px;
+  white-space:nowrap;
+}
+.link{
+  display:block;
+  color:var(--accent-link);
+  font-size:31px;
+  line-height:1.34;
+  margin-top:11px;
+}
+.cta{
+  margin:68px auto 0;
+  width:100%;
+  min-height:105px;
+  padding:20px 32px;
+  border-radius:17px;
+  background:var(--accent);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:17px;
+  font-size:34px;
+  font-weight:400;
+}
+.person{
+  width:31px;height:28px;position:relative;flex:0 0 auto;
+}
+.person:before{
+  content:"";
+  position:absolute;
+  width:14px;height:14px;
+  border-radius:50%;
+  background:#fff;
+  left:1px;top:0;
+}
+.person:after{
+  content:"";
+  position:absolute;
+  left:-2px;bottom:0;
+  width:23px;height:12px;
+  background:#fff;
+  border-radius:12px 12px 3px 3px;
+}
+.plus{
+  position:absolute;
+  color:#fff;
+  font-size:22px;
+  font-weight:700;
+  right:-3px;
+  top:-3px;
+  line-height:1;
+}
+@media (max-width:600px){
+  .card{
+    width:100%;
+    padding:31px 27px 57px;
+  }
+  .logo{
+    width:76vw;
+    margin-bottom:29px;
+  }
+  .avatar{
+    width:40vw;
+    height:40vw;
+    max-width:230px;
+    max-height:230px;
+    margin-bottom:34px;
+  }
+  .company{
+    font-size:22px;
+    line-height:1.18;
+    margin-bottom:18px;
+    letter-spacing:-.25px;
+  }
+  .name{
+    font-size:31px;
+    line-height:1.14;
+    letter-spacing:-.4px;
+  }
+  .role{
+    max-width:345px;
+    margin-top:20px;
+    font-size:20px;
+    line-height:1.47;
+  }
+  .contacts{margin-top:37px}
+  .phone{
+    font-size:22px;
+    margin-bottom:15px;
+  }
+  .address{
+    font-size:19px;
+    line-height:1.38;
+    margin-bottom:13px;
+    white-space:normal;
+  }
+  .link{
+    font-size:20px;
+    margin-top:10px;
+  }
+  .cta{
+    margin-top:47px;
+    min-height:69px;
+    border-radius:12px;
+    gap:13px;
+    font-size:21px;
+    padding:14px 22px;
+  }
+  .person{transform:scale(.82)}
+}
+</style>
+</head>
+<body>
+<main class="card">
+  <img class="logo" src="lt-logo.png" alt="Световые Технологии">
+
+  <img class="avatar"
+       src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Brad_Pitt_2008.jpg"
+       alt="Никита Старков">
+
+  <div class="company">ООО "МГК "Световые Технологии"</div>
+
+  <h1 class="name">Никита Старков</h1>
+
+  <div class="role">Руководитель направления «Спорт»</div>
+
+  <div class="contacts">
+    <a class="phone" href="tel:+79296817127">+79296817127</a>
+    <div class="address">127273, г. Москва, ул. Отрадная, д.2Б, стр.7</div>
+    <a class="link" href="https://www.ltcompany.com/" target="_blank" rel="noopener">www.ltcompany.com</a>
+    <a class="link" href="mailto:n.starkov@ltcompany.com">n.starkov@ltcompany.com</a>
+  </div>
+
+  <a class="cta" href="contact.vcf" download>
+    <span class="person"><span class="plus">+</span></span>
+    <span>Добавить в контакты</span>
+  </a>
+</main>
+</body>
+</html>
